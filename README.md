@@ -40,7 +40,9 @@ sudo apt update && sudo apt install g++ libpcap-dev tcpreplay python3 python3-ma
         |-- histogram_data.csv           # Histogram data in CSV format
     |-- histogram_gen.py                # Script to generate histogram of packet sizes
     |-- raw_packet_sniffer.cpp          # Packet Sniffer Implementation
+|-- 6-22110272_22110221.pdf #report
 |-- README.md                          # This file
+
 ```
 ## PCAP File
 
@@ -86,3 +88,28 @@ Run the following command in WSL:
 python3 histogram_gen.py
 ```
 This script generates a histogram of packet sizes from the captured data.
+
+## Compilation and Execution for part2
+
+### In One Terminal
+
+#### Compile the Packet Sniffer
+
+```bash
+g++ -o q2 q2.cpp -lpcap
+```
+#### Run the Packet Sniffer
+```bash
+sudo ./q2 eth0
+```
+### In Another Terminal
+#### Replay Captured Packets
+```bash
+
+sudo tcpreplay -i eth0 --topspeed 6.pcap
+```
+(Replace eth0 with your active network interface)
+
+### Stop the Sniffer
+Once the packet replay output is displayed, press Ctrl + C in the first terminal to stop the sniffer.
+
