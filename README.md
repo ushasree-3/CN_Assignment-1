@@ -29,7 +29,7 @@ sudo apt update && sudo apt install g++ libpcap-dev tcpreplay python3 python3-ma
 ## Folder Structure
 
 ```bash
-|-- part1/
+|-- part1_q/
     |-- results/
         |-- 1_1.txt                     # Metrics output file
         |-- 1_2.txt                     # Flow data output file
@@ -40,6 +40,9 @@ sudo apt update && sudo apt install g++ libpcap-dev tcpreplay python3 python3-ma
         |-- histogram_data.csv           # Histogram data in CSV format
     |-- histogram_gen.py                # Script to generate histogram of packet sizes
     |-- raw_packet_sniffer.cpp          # Packet Sniffer Implementation
+|--part2_q/
+  |--part2_1.cpp
+  |--part2_2_3.cpp
 |-- 6-22110272_22110221.pdf #report
 |-- README.md                          # This file
 
