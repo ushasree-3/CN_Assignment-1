@@ -122,6 +122,8 @@ After stopping the sniffer, the following output files will be created:
 
 - **private_ips.txt** - private ip address of the attacker (detected multiple times)
 
+## Compilation and Execution for part2_q2 & part2_q3
+
 ### In One Terminal
 
 #### Compile the Packet Sniffer
