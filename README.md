@@ -116,7 +116,11 @@ sudo tcpreplay -i eth0 --topspeed 6.pcap
 ### Stop the Sniffer
 Once the packet replay output is displayed, press Ctrl + C in the first terminal to stop the sniffer.
 
-## Compilation and Execution for part2_q2 & part2_q3
+### Check Generated Output Files
+
+After stopping the sniffer, the following output files will be created:
+
+- **private_ips.txt** - private ip address of the attacker (detected multiple times)
 
 ### In One Terminal
 
